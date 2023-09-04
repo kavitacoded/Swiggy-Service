@@ -21,4 +21,11 @@ public class SwiggyController {
 	public ResponseEntity<?> showItems(){
 		return new ResponseEntity<String>(user + " Order From Swiggy"+ "From "+ pass,HttpStatus.OK);
 	}
+	
+	@GetMapping("/details")
+	public ResponseEntity<?>showOrders(){
+		return new ResponseEntity<String>(user + "from custormers",HttpStatus.OK);
+	}
+	
+	
 }
