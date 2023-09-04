@@ -24,7 +24,7 @@ public class SwiggyController {
 	
 	@GetMapping("/details")
 	public ResponseEntity<?>showOrders(){
-		return new ResponseEntity<String>(user + "from custormers",HttpStatus.OK);
+		return new ResponseEntity<String>(user + "from custormers....",HttpStatus.OK);
 	}
 	
 	
